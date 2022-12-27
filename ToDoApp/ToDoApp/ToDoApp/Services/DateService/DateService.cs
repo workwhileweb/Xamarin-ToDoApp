@@ -14,7 +14,7 @@ namespace ToDoApp.Services.DateService
             while (firstDayInWeek.DayOfWeek != firstDay)
                 firstDayInWeek = firstDayInWeek.AddDays(-1);
             var lastDayInWeek = firstDayInWeek.AddDays(6);
-            return new WeekModel()
+            return new WeekModel
             {
                 StartDay = firstDayInWeek,
                 LastDay = lastDayInWeek,
@@ -30,7 +30,7 @@ namespace ToDoApp.Services.DateService
             for (var i = 0; i < 7; i++)
             {
                 var date = firstDayInWeek.AddDays(i);
-                dayList.Add(new DayModel()
+                dayList.Add(new DayModel
                 {
                     Date = date,
                     Day = date.Day,

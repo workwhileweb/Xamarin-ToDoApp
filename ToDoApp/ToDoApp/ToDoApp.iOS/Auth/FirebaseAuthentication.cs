@@ -15,7 +15,7 @@ namespace ToDoApp.iOS.Auth
             {
                 var firebaseUser = await Firebase.Auth.Auth.DefaultInstance.SignInWithPasswordAsync(email, password);
                 var token = await firebaseUser.User.GetIdTokenAsync();
-                var user = new UserModel()
+                var user = new UserModel
                 {
                     DisplayName = firebaseUser.User.DisplayName,
                     Email = firebaseUser.User.Email,

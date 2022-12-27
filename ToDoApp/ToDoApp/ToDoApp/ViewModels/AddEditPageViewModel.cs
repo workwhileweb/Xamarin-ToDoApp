@@ -55,7 +55,7 @@ namespace ToDoApp.ViewModels
                 IsEdit = true;
                 Type = "task";
                 Title = "Edit task";
-                var param = new NavigationParameters()
+                var param = new NavigationParameters
                 {
                     { "task", task },
                     { "isEdit", true }
@@ -69,7 +69,7 @@ namespace ToDoApp.ViewModels
                 Type = "task";
                 Title = "Add new task";
 
-                var param = new NavigationParameters()
+                var param = new NavigationParameters
                 {
                     { "task", null },
                     { "isEdit", false }

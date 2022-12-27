@@ -98,7 +98,7 @@ namespace ToDoApp.ViewModels
             Week = _dateService.GetWeek(DateTime.Now);
             DaysList = new ObservableCollection<DayModel>(_dateService.GetDayList(Week.StartDay, Week.LastDay));
             TaskList = new ObservableCollection<TaskModel>();
-            _selectedDay = new DayModel() { Date = DateTime.Today };
+            _selectedDay = new DayModel { Date = DateTime.Today };
 
             SetUserName();
             CreateQueryForTasks(DateTime.Today);
@@ -152,7 +152,7 @@ namespace ToDoApp.ViewModels
 
         private async void EditTaskCommandHandler(TaskModel taskModel)
         {
-            var param = new NavigationParameters()
+            var param = new NavigationParameters
             {
                 { "task", taskModel }
             };

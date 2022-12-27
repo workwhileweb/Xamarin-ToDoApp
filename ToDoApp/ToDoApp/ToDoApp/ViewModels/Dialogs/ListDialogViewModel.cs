@@ -64,7 +64,7 @@ namespace ToDoApp.ViewModels.Dialogs
             {
                 Preferences.Set("taskFilterByList", SelectedList.Name);
             }
-            var param = new DialogParameters()
+            var param = new DialogParameters
             {
                 { "selectedList", SelectedList.Name }
             };

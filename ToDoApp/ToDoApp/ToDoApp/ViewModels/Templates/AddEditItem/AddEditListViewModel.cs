@@ -90,7 +90,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
             {
                 var auth = DependencyService.Get<IFirebaseAuthentication>();
                 var userId = auth.GetUserId();
-                var model = new ListModel()
+                var model = new ListModel
                 {
                     Name = Name.Value,
                     Color = Color.Value,
@@ -103,7 +103,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
                 }
                 else
                 {
-                    var param = new DialogParameters()
+                    var param = new DialogParameters
                     {
                         { "message", Constants.Errors.GeneralError }
                     };
@@ -112,7 +112,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
             }
             catch (Exception ex)
             {
-                var param = new DialogParameters()
+                var param = new DialogParameters
                 {
                     { "message", Constants.Errors.GeneralError }
                 };
@@ -134,7 +134,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
 
             if (Mode == "Edit")
             {
-                AddList = new ListModel()
+                AddList = new ListModel
                 {
                     Name = Constants.DefaultList.Name,
                     Color = Constants.DefaultList.Color,
@@ -142,7 +142,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
             }
             else
             {
-                AddList = new ListModel()
+                AddList = new ListModel
                 {
                     Name = Constants.DefaultList.Name,
                     Color = Constants.DefaultList.Color,

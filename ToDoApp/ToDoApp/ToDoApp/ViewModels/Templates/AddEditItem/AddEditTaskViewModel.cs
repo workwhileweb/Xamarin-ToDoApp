@@ -101,7 +101,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
 
                 if (Mode == "Edit")
                 {
-                    var model = new TaskModel()
+                    var model = new TaskModel
                     {
                         Archived = false,
                         List = List.Value,
@@ -117,7 +117,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
                     }
                     else
                     {
-                        var param = new DialogParameters()
+                        var param = new DialogParameters
                         {
                             { "message", Constants.Errors.GeneralError }
                         };
@@ -126,7 +126,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
                 }
                 else
                 {
-                    var model = new TaskModel()
+                    var model = new TaskModel
                     {
                         Archived = false,
                         List = List.Value,
@@ -141,7 +141,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
                     }
                     else
                     {
-                        var param = new DialogParameters()
+                        var param = new DialogParameters
                         {
                             { "message", Constants.Errors.GeneralError }
                         };
@@ -151,7 +151,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
             }
             catch (Exception ex)
             {
-                var param = new DialogParameters()
+                var param = new DialogParameters
                 {
                     { "message", Constants.Errors.GeneralError }
                 };
@@ -162,7 +162,7 @@ namespace ToDoApp.ViewModels.Templates.AddEditItem
 
         private void OpenListDialogCommandHandler()
         {
-            var param = new DialogParameters()
+            var param = new DialogParameters
             {
                 { "fromPage", "AddEdit" },
                 { "selectedItem", List.Value }

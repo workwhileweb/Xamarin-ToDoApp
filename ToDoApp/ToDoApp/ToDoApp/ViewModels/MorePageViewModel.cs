@@ -57,7 +57,7 @@ namespace ToDoApp.ViewModels
 
         private void OpenListDialogCommandHandler()
         {
-            var param = new DialogParameters()
+            var param = new DialogParameters
             {
                 { "fromPage", "More" }
             };

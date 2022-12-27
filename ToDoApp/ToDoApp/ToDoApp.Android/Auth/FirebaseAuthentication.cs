@@ -16,7 +16,7 @@ namespace ToDoApp.Droid.Auth
             {
                 var firebaseUser = await FirebaseAuth.Instance.SignInWithEmailAndPasswordAsync(email, password);
                 var token = await firebaseUser.User.GetIdToken(false).AsAsync<GetTokenResult>();
-                var user = new UserModel()
+                var user = new UserModel
                 {
                     DisplayName = firebaseUser.User.DisplayName,
                     Email = firebaseUser.User.Email,

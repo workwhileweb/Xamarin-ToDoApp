@@ -4,10 +4,19 @@ using Android.OS;
 using Android.Runtime;
 using Firebase;
 using ToDoApp.Droid.Auth;
+using vn.tuyetvoi.mobile;
 
 namespace ToDoApp.Droid
 {
-    [Activity(Label = "ToDoApp", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
+    [Activity(Label = "ToDoApp",
+        Icon = "@mipmap/icon",
+        Theme = "@style/MainTheme",
+        MainLauncher = true,
+        ConfigurationChanges = ConfigChanges.ScreenSize |
+                               ConfigChanges.Orientation |
+                               ConfigChanges.UiMode |
+                               ConfigChanges.ScreenLayout |
+                               ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

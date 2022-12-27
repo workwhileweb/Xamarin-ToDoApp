@@ -119,7 +119,7 @@ namespace ToDoApp.ViewModels
             var lists = await _listRepository.GetAll(userId).GetAsync();
             var tasks = await _taskRepository.GetAll(userId).GetAsync();
 
-            ProfileDetails = new ProfileDetailsModel()
+            ProfileDetails = new ProfileDetailsModel
             {
                 TotalLists = lists.Count,
                 TotalTasks = tasks.Count,

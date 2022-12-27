@@ -87,7 +87,7 @@ namespace ToDoApp.ViewModels.Templates.Auth
             }
             catch (Exception ex)
             {
-                var param = new DialogParameters()
+                var param = new DialogParameters
                 {
                     { "message", Constants.Errors.GeneralError }
                 };

@@ -85,6 +85,7 @@
     <!--#region Links-->
 
     <Style x:Key="Base_Link" TargetType="Label">
+
         <Setter Property="FontFamily" Value="Mulish_Bold" />
         <Setter Property="TextDecorations" Value="Underline" />
         <Setter Property="FontSize" Value="{StaticResource Body1FontSize}" />

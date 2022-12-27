@@ -8,12 +8,14 @@ namespace ToDoApp.Helpers
 {
     public static class Constants
     {
-        public static ObservableCollection<string> AddOptions = new ObservableCollection<string>() {
+        public static ObservableCollection<string> AddOptions = new ObservableCollection<string>
+        {
             "task",
             "list"
         };
 
-        public static List<string> ListColorList = new List<string>() {
+        public static List<string> ListColorList = new List<string>
+        {
             "#F9371C",
             "#F97C1C",
             "#F9C81C",
@@ -22,14 +24,15 @@ namespace ToDoApp.Helpers
             "#6562FC"
         };
 
-        public static ListModel InboxList = new ListModel() {
+        public static ListModel InboxList = new ListModel
+        {
             Id = "zlDZNn3sNmyirSNs3mRY",
             Name = "Inbox",
             UserId = "Default",
             Color = "#F9371C"
         };
 
-        public static ListModel AllLists = new ListModel()
+        public static ListModel AllLists = new ListModel
         {
             Id = "alllist",
             Name = "All lists",
@@ -37,7 +40,7 @@ namespace ToDoApp.Helpers
             Color = "#F9371C",
         };
 
-        public static TaskModel DefaultTask = new TaskModel()
+        public static TaskModel DefaultTask = new TaskModel
         {
             Task = "",
             Archived = false,
@@ -45,7 +48,7 @@ namespace ToDoApp.Helpers
             Date = DateTime.Now.ToString("dd/MM/yyyy")
         };
 
-        public static ListModel DefaultList = new ListModel()
+        public static ListModel DefaultList = new ListModel
         {
             Name = "",
             Color = "#F9371C",
